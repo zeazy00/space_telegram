@@ -94,7 +94,6 @@ def get_images(spacex_url, spacex_path, nasa_url, nasa_path, last_date_epic_url,
 	images_path.extend(spacex_images_path)
 	images_path.extend(nasa_images_path)
 	images_path.extend(epic_images_path)
-	print(images_path)
 	return images_path
 
 def telegram_bot(telegram_token, chat_id, images_path):
