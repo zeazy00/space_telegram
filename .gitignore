@@ -1,6 +1,7 @@
 nasa_photos/
 spacex_photos/
 epic_photos/
+.gitattributes
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
