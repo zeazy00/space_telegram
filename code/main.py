@@ -35,13 +35,14 @@ if __name__ == "__main__":
     spacex_path = "../spacex_photos"
     epic_path = "../epic_photos"
     
+    delay_time = os.environ['DELAY_TIME']
     nasa_api_key = os.environ['NASA_API_KEY']
     telegram_token = os.environ['TELEGRAM_TOKEN']
     chat_id = os.environ['CHAT_ID']
+
 
     while True:
         images_path = get_images(spacex_url, spacex_path, nasa_url, nasa_path, last_date_epic_url, epic_path, nasa_api_key)
         telegram_bot(telegram_token, chat_id, images_path)
         print("ok")
         sleep(86400)
-        
