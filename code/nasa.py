@@ -4,7 +4,8 @@ from common import get_image
 from pathvalidate import sanitize_filename
 from urllib.parse import urlparse
 
-def get_nasa_images(nasa_url, nasa_path):
+def get_nasa_images(nasa_path):
+	nasa_url = f"https://api.nasa.gov/planetary/apod?count=30&api_key={nasa_api_key}"
 	nasa_images_path = []
 	response = requests.get(nasa_url)
 	response.raise_for_status()

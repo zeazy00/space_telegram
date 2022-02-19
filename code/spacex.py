@@ -1,12 +1,13 @@
 import requests
 from common import get_image
 
-def fetch_spacex_last_launch(spacex_url, spacex_path):
+def fetch_spacex_last_launch(spacex_path):
+	spacex_url = "https://api.spacexdata.com/v4/launches/latest"
 	spacex_images_path = []
 	response = requests.get(spacex_url)
 	response.raise_for_status()
 	links = response.json()["links"]["flickr"]["original"]
-	if (links == []):
+	if not links:
 		print("no spasex links")
 	else:
 		for link in enumerate(links):

@@ -2,6 +2,7 @@ import requests
 from common import get_image
 
 def get_epic_images(last_date_epic_url, epic_path, nasa_api_key):
+	last_date_epic_url = f"https://api.nasa.gov/EPIC/api/natural?api_key={nasa_api_key}"
 	epic_images_path = []
 	response = requests.get(last_date_epic_url)
 	response.raise_for_status()
