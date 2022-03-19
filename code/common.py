@@ -2,8 +2,8 @@ import os
 import requests
 
 
-def get_image(filename, path, url):
-    response = requests.get(url)
+def download_image(filename, path, url, params={}):
+    response = requests.get(url, params=params)
     response.raise_for_status()
 
     file_path = f"{path}/{filename}"
