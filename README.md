@@ -22,9 +22,13 @@ pip install -r requirements.txt
 Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/).
 
 ### Пример работы
-
+##Переходим в папку с проектом и открываем переменную окружения
 ```
-(env) C:\Users\Zeazy\Desktop\python\devman\space_telegram\code>python main.py
+C:\Users\Zeazy\Desktop\python\devman\space_telegram>env\Scripts\activate
+```
+##Запускаем код
+```
+(env) C:\Users\Zeazy\Desktop\python\devman\space_telegram\code>python code\main.py
 INFO:root:no spasex links
 INFO:root:images from Astronomy Picture of the Day: 28
 WARNING:root:errors: 2
