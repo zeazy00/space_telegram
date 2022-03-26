@@ -22,11 +22,11 @@ pip install -r requirements.txt
 Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/).
 
 ### Пример работы
-##Переходим в папку с проектом и открываем переменную окружения
+#### Переходим в папку с проектом и открываем переменную окружения
 ```
 C:\Users\Zeazy\Desktop\python\devman\space_telegram>env\Scripts\activate
 ```
-##Запускаем код
+#### Запускаем код
 ```
 (env) C:\Users\Zeazy\Desktop\python\devman\space_telegram\code>python code\main.py
 INFO:root:no spasex links
