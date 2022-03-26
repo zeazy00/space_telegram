@@ -5,7 +5,6 @@ from common import download_image
 from pathvalidate import sanitize_filename
 from urllib.parse import urlparse
 
-logging.basicConfig(level=logging.INFO)
 
 def get_apod_images(nasa_api_key, apod_path="../apod_photos"):
     params = {

@@ -3,7 +3,6 @@ import os
 import requests
 from common import download_image
 
-logging.basicConfig(level=logging.INFO)
 
 def get_epic_images(nasa_api_key, epic_path="../epic_photos"):
     params = {"api_key": nasa_api_key}

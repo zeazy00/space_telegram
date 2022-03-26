@@ -3,7 +3,6 @@ import os
 import requests
 from common import download_image
 
-logging.basicConfig(level=logging.INFO)
 
 def fetch_spacex_last_launch(spacex_path="../spacex_photos"):
     number_of_pictures = 0
