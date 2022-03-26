@@ -24,6 +24,7 @@ pip install -r requirements.txt
 ### Пример работы
 
 ```
+(env) C:\Users\Zeazy\Desktop\python\devman\space_telegram\code>python main.py
 INFO:root:no spasex links
 INFO:root:images from Astronomy Picture of the Day: 28
 WARNING:root:errors: 2
