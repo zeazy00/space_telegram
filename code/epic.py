@@ -5,11 +5,10 @@ from common import download_image
 
 logging.basicConfig(level=logging.INFO)
 
-def get_epic_images(nasa_api_key):
+def get_epic_images(nasa_api_key, epic_path="../epic_photos"):
     params = {"api_key": nasa_api_key}
     last_date_epic_url = f"https://api.nasa.gov/EPIC/api/natural"
     number_of_pictures = 0
-    epic_path = "../epic_photos"
     epic_images_path = []
     response = requests.get(last_date_epic_url, params)
     response.raise_for_status()

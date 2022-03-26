@@ -5,10 +5,9 @@ from common import download_image
 
 logging.basicConfig(level=logging.INFO)
 
-def fetch_spacex_last_launch():
+def fetch_spacex_last_launch(spacex_path="../spacex_photos"):
     number_of_pictures = 0
     spacex_url = "https://api.spacexdata.com/v4/launches/latest"
-    spacex_path = "../spacex_photos"
     spacex_images_path = []
     response = requests.get(spacex_url)
     response.raise_for_status()

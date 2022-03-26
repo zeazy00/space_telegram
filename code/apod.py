@@ -7,14 +7,13 @@ from urllib.parse import urlparse
 
 logging.basicConfig(level=logging.INFO)
 
-def get_apod_images(nasa_api_key):
+def get_apod_images(nasa_api_key, apod_path="../apod_photos"):
     params = {
     "count": 30,
     "api_key": nasa_api_key}
     number_of_pictures = 0
     errors = 0
     apod_url = f"https://api.nasa.gov/planetary/apod"
-    apod_path = "../apod_photos"
     apod_images_path = []
     response = requests.get(apod_url, params)
     response.raise_for_status()
