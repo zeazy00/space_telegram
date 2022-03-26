@@ -27,7 +27,7 @@ def send_images(telegram_token, chat_id, images_path, delay_time):
     for image_path in images_path:
         with open(image_path, 'rb') as file:
             bot.send_document(chat_id=chat_id, document=file)
-            sleep(delay_time)
+        sleep(delay_time)
     bot.send_message(chat_id=chat_id, text="Goodbye!")
     return bot
 
