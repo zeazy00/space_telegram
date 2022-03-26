@@ -8,8 +8,8 @@ from urllib.parse import urlparse
 
 def get_apod_images(nasa_api_key, apod_path="../apod_photos"):
     params = {
-    "count": 30,
-    "api_key": nasa_api_key}
+        "count": 30,
+        "api_key": nasa_api_key}
     number_of_pictures = 0
     errors = 0
     apod_url = f"https://api.nasa.gov/planetary/apod"
@@ -29,7 +29,6 @@ def get_apod_images(nasa_api_key, apod_path="../apod_photos"):
     logging.info(f"images from Astronomy Picture of the Day: {number_of_pictures}")
     logging.warning(f"errors: {errors}")
     return apod_images_path
-
 
 
 def get_extension(url):
