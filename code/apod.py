@@ -23,9 +23,9 @@ def get_apod_images(nasa_api_key, apod_path="../apod_photos"):
             filename = sanitize_filename(image_info['title'] + get_extension(image_info['hdurl']))
             download_image(filename, apod_path, image_info['hdurl'])
             apod_images_path.append(f"{apod_path}/{filename}")
-            number_of_pictures = number_of_pictures + 1
+            number_of_pictures += 1
         else:
-            errors = errors + 1
+            errors += 1
     logging.info(f"images from Astronomy Picture of the Day: {number_of_pictures}")
     logging.warning(f"errors: {errors}")
     return apod_images_path

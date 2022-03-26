@@ -19,6 +19,6 @@ def fetch_spacex_last_launch(spacex_path="../spacex_photos"):
             filename = f"spacex{file_number}.jpg"
             download_image(filename, spacex_path, link[1])
             spacex_images_path.append(f"{spacex_path}/{filename}")
-            number_of_pictures = number_of_pictures + 1
+            number_of_pictures += 1
         logging.info(f"images from SpaceX: {number_of_pictures}")
     return spacex_images_path
